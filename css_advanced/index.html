@@ -1,196 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- 1.Import the style, Import styles.css in the head of your index.html -->
-  <head>
-    <meta charset="utf-8">
-    <title>Smile School</title>
-    <link rel="stylesheet" href="styles.css">
-
-  </head>
-  <body>
-    <!-- 2. Add the header and Banner -->
-    <header class="header">
-      <div class="menu-top">
-        <div class="logo">
-          <a  href="#"><img src="images/logo.png" alt="Smile School"></a>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <div>
+            <a href="#"><img src="./assests/logo.png" /></a>
+            <div>
+                <a href="#">Courses</a>
+                <a href="#">Pricing</a>
+                <a href="#">Login</a>
+            </div>
         </div>
-      </div>
-      <div class="menu-top-right">
-        <a href=""><div class="courses">COURSES</div></a>
-        <a href=""><div class="pricing">PRICING</div></a>
-        <a href=""><div class="login">LOGIN</div></a>
-      </div>
     </header>
-    <!-- Main, first block -->
+
+    <!-- Main content -->
     <main>
-      <section>
-              <h1 class="getschooled">Get Schooled</h1>
-              <div class="emotion">
-              <p class="smile">SMILE</p>
-              <p class="grin">GRIN</p>
-              <p class="laugh">LAUGH</p>
-            </div>
-
-            <div class="button-frame">
-              <div class="register-button">
-                <p>REGISTER FOR FREE</p>
-                <div class="button-background"></div>
-                </div>
-            </div>
-            <div class="learn-from-pros">
-              <h2>
-                <span class="learn">Learn</span>
-                <span class="from-pros">from the pros</span>
-              </h2>
-      </section>
-
-      <section>
-        <!-- Pros Section -->
-        <div class="pros-container">
-          <div class="pro">
-            <div class="avatar">
-            <img src="images/avatar.png" alt="Pro 1">
-            <div class="mask"></div>
-            <div class="mask"></div>
-            </div>
-            <h3 class="pro-name">Philip Massey</h3>
-            <p class="pro-title">« Smile of the year » 2018 - 2019</p>
-        </div>
-          <div class="pro">
-            <div class="avatar">
-              <img src="images/avatar2.png" alt="Pro 1">
-              <div class="mask"></div>
-              <div class="mask"></div>
-              </div>
-              <h3 class="pro-name">Nannie Lawrence</h3>
-              <p class="pro-title">Best « little smile » 2017</p>
-          </div>
-          <div class="pro">
-            <div class="avatar">
-              <img src="images/avatar3.png" alt="Pro 1">
-              <div class="mask"></div>
-              <div class="mask"></div>
-              </div>
-              <h3 class="pro-name">Bruce Walters</h3>
-              <p class="pro-title">Best « Friend Smile » live performance 2019</p>
-          </div>
-          <div class="pro">
-            <div class="avatar">
-              <img src="images/avatar4.png" alt="Pro 1">
-              <div class="mask"></div>
-              <div class="mask"></div>
-              </div>
-              <h3 class="pro-name">Henry Hughes</h3>
-              <p class="pro-title">« 24h smiles » winner 2016 - 2019</p>
-          </div>
-        </div>
-        </section>
-
+        <!-- First section -->
         <section>
-          <!-- Quotes Section -->
-          <div class="quote-section">
-            <div class="quote-content">
-            <img src="images/avatar5.png" alt="IMAGE">
-              <div class="quote-info">
-                <blockquote>« Those tutorials are concise and go straight to the point.
-                  I can’t think of a better place to learn smiling. And it’s so fun!</blockquote>
-                <div class="quote-details">
-                  <p class="name-person">Person Name</p>
-                  <p class="title">weather presenter</p>
-              </div>
-              </div>
+            <div>
+                <h1>Get schooled</h1>
+                <p class="sub-title">Smiles Grin Laugh</p>
+                <button>Register for free</button>
             </div>
-          </div>
-        </section>
 
-        <section class="after-quote-section", style="background-color: #ffffff;">
-          <!--Closes the gap if you use the styling in the section and not a div -->
-          <!-- Videos Section -->
-          <div class="popular">
-            <h2>
-              <span class="most">Most</span>
-              <span class="pop">Popular</span>
-              <span class="tutorials">Tutorials</span>
-            </h2>
-          </div>
+            <div>
+                <h2><span>Learn</span> from the pros</h2>
+                <div>
+                    <!-- Testimonial 1 -->
+                    <div>
+                        <img src="./assests/pros-1.png" alt="Image" />
+                        <h3>Phillip Massey</h3>
+                        <p>
+                            « Smile of the year » <br />
+                            2018 - 2019
+                        </p>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div>
+                        <img src="./assests/pros-2.png" alt="Image" />
+                        <h3>Nannie Lawrence</h3>
+                        <p>
+                            Best « little smile » <br />
+                            2017
+                        </p>
+                    </div>
 
-          <!-- A block containing 4 video blocks -->
-            <!-- Each video block composed with an image, an heading, and a text -->
-            <!-- then Author and rating blocks -->
-            <div class="video-blocks">
-              <div class="video-block">
-                  <img src="images/tuto_1.png" alt="IMAGE">
-                  <img src="images/tuto_2.png" alt="IMAGE">
-                  <img src="images/tuto_3.png" alt="IMAGE">
-                  <img src="images/tuto_4.png" alt="IMAGE">
+                    <!-- Testimonial 3 -->
+                    <div>
+                        <img src="./assests/pros-3.png" alt="Image" />
+                        <h3>Bruce Walters</h3>
+                        <p>
+                            Best « Friend Smile » <br />
+                            live performance 2019
+                        </p>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div>
+                        <img src="./assests/pros-4.png" alt="Image" />
+                        <h3>Henry Hughes</h3>
+                        <p>
+                            « 24h smiles » <br />
+                            winner 2016 - 2019
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="after-popular-section", style="background-color: #071629;">
-          <!-- Membership Section -->
-          <div class="free-membership">
-          <h2>
-            <span class="free">Free</span>
-            <span class="membership">Membership</span>
-          </h2>
-          </div>
-          <div class="membership-blocks">
-            <div class="membership-block">
-              <img src="images/dot_1.png" alt="IMAGE">
-              <img src="images/dot_2.png" alt="IMAGE">
-              <img src="images/dot_3.png" alt="IMAGE">
-              <img src="images/dot_4.png" alt="IMAGE">
+        <!-- Second section (Testimonial) -->
+        <section>
+            <div>
+                <img src="./assests/testimonials-avatar.png" alt="Image" />
+                <div>
+                    <blockquote>
+                        « Those tutorials are concise and go straight to the
+                        point. I can’t think of a better place to learn
+                        smiling. And it’s so fun! »
+                    </blockquote>
+                    <p class="author">Person Name</p>
+                    <p>weather presenter</p>
+                </div>
             </div>
-          </div>
-          <div class="button-frame2">
-            <div class="register-button">
-              <p>REGISTER FOR FREE</p>
-              <div class="button-background"></div>
-              </div>
-          </div>
         </section>
 
-        <section class="after-quote-section" style="background-color: #ffffff;">
-          <!-- FAQ Section -->
-          <h1 class="faq">F.A.Q.</h1>
-          <!-- A block that contains 2 “row blocks” -->
-          <div class="faq-blocks">
-            <!-- Each “row block” contains 2 “item blocks” -->
-            <div class="faq-row">
-              <!-- Each “item block” is composed of an image and text -->
-              <div class="faq-item">
-                <img src="images/Q_1.png">
-              </div>
-              <div class="faq-item">
-                <img src="images/Q_2.png">
-              </div>
+        <!-- Third section (Popular tutorials) -->
+        <section>
+            <h1>Most <span>popular</span> tutorials</h1>
+            <div class="vd-block">
+                <!-- Video block 1 -->
+                <div class="vd">
+                    <img src="./assests/diagonal-smile-preview.png" alt="Image" />
+                    <h2>Diagonal Smile</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consect adipiscing elit,
+                        sed do eiusmod.
+                    </p>
+                    <div class="vd-author">
+                        <img src="./assests/testimonials-avatar.png" alt="Image" />
+                        <h3>Phillip Massey</h3>
+                    </div>
+                    <div class="vd-rat">
+                        <div>
+                            <img src="./assests/star_1.png" alt="Star" />
+                            <img src="./assests/star_2.png" alt="Star" />
+                            <img src="./assests/star_3.png" alt="Star" />
+                            <img src="./assests/star_4.png" alt="Star" />
+                            <img src="./assests/star_5.png" alt="Star" />
+                        </div>
+                        <p>8 min</p>
+                    </div>
+                </div>
+
+                <!-- Video block 2 -->
+                <div class="vd">
+                    <img src="./assests/sad-smile-preview.png" alt="Image" />
+                    <h2>Sad Smile</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consect adipiscing elit,
+                        sed do eiusmod.
+                    </p>
+                    <div class="vd-author">
+                        <img src="./assests/testimonials-avatar.png" alt="Image" />
+                        <h3>Phillip Massey</h3>
+                    </div>
+                    <div class="vd-rat">
+                        <div>
+                            <img src="./assests/star_1.png" alt="Star" />
+                            <img src="./assests/star_2.png" alt="Star" />
+                            <img src="./assests/star_3.png" alt="Star" />
+                            <img src="./assests/star_4.png" alt="Star" />
+                            <img src="./assests/star_5.png" alt="Star" />
+                        </div>
+                        <p>8 min</p>
+                    </div>
+                </div>
+
+                <!-- Video block 3 -->
+                <div class="vd">
+                    <img src="./assests/natural-smile-preview.png" alt="Image" />
+                    <h2>Natural Smile</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consect adipiscing elit,
+                        sed do eiusmod.
+                    </p>
+                    <div class="vd-author">
+                        <img src="./assests/testimonials-avatar.png" alt="Image" />
+                        <h3>Phillip Massey</h3>
+                    </div>
+                    <div class="vd-rat">
+                        <div>
+                            <img src="./assests/star_1.png" alt="Star" />
+                            <img src="./assests/star_2.png" alt="Star" />
+                            <img src="./assests/star_3.png" alt="Star" />
+                            <img src="./assests/star_4.png" alt="Star" />
+                            <img src="./assests/star_5.png" alt="Star" />
+                        </div>
+                        <p>8 min</p>
+                    </div>
+                </div>
+
+                <!-- Video block 4 -->
+                <div class="vd">
+                    <img src="./assests/happy-smile-preview.png" alt="Image" />
+                    <h2>Happy Smile</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consect adipiscing elit,
+                        sed do eiusmod.
+                    </p>
+                    <div class="vd-author">
+                        <img src="./assests/testimonials-avatar.png" alt="Image" />
+                        <h3>Phillip Massey</h3>
+                    </div>
+                    <div class="vd-rat">
+                        <div>
+                            <img src="./assests/star_1.png" alt="Star" />
+                            <img src="./assests/star_2.png" alt="Star" />
+                            <img src="./assests/star_3.png" alt="Star" />
+                            <img src="./assests/star_4.png" alt="Star" />
+                            <img src="./assests/star_5.png" alt="Star" />
+                        </div>
+                        <p>8 min</p>
+                    </div>
+                </div>
             </div>
-            <div class="faq-row">
-              <div class="faq-item">
-                <img src="images/Q_3.png">
-              </div>
-              <div class="faq-item">
-                <img src="images/Q_4.png">
-              </div>
-            </div>
-          </div>
         </section>
 
+        <!-- Fourth section (Free membership) -->
+        <section>
+            <h1><span>Free</span> membership</h1>
+            <div>
+                <!-- Membership block 1 -->
+                <div>
+                    <img src="./assests/membership-smile.png" alt="Image" />
+                    <h2>Lorem ipsum</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit.
+                    </p>
+                </div>
+
+                <!-- Membership block 2 -->
+                <div>
+                    <img src="./assests/membership-smile.png" alt="Image" />
+                    <h2>Lorem ipsum</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit.
+                    </p>
+                </div>
+
+                <!-- Membership block 3 -->
+                <div>
+                    <img src="./assests/membership-smile.png" alt="Image" />
+                    <h2>Lorem ipsum</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit.
+                    </p>
+                </div>
+
+                <!-- Membership block 4 -->
+                <div>
+                    <img src="./assests/membership-smile.png" alt="Image" />
+                    <h2>Lorem ipsum</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit.
+                    </p>
+                </div>
+            </div>
+            <button>REGISTER FOR FREE</button>
+        </section>
+
+        <!-- Fifth section (FAQ) -->
+        <section>
+            <h1 class="title">F.A.Q.</h1>
+            <div class="block">
+                <!-- FAQ item 1 -->
+                <div class="row">
+                    <div>
+                        <h2>How does this work?</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa
+                            qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    <!-- FAQ item 2 -->
+                    <div>
+                        <h2>How does this work?</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa
+                            qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                <!-- FAQ item 3 -->
+                <div class="row">
+                    <div>
+                        <h2>How does this work?</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa
+                            qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    <!-- FAQ item 4 -->
+                    <div>
+                        <h2>How does this work?</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa
+                            qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer style="background-color: #071629;">
-      <!-- A global block (used later for centering the footer content) -->
-      <div class="footer-content" style="background-color: #071629;">
-        <!-- A “row block” with an image and a block with images with link and a text -->
-        <div class="footer-row">
-          <!-- LOGO for footer -->
-          <img src="images/logo.png" alt="logo">
-          <div class="social-links">
-            <a href=""><img src="images/Facebook_White.png" alt="Facebook"></a>
-            <a href=""><img src="images/Twitter_White.png" alt="Twitter"></a>
-            <a href=""><img src="images/Instagram_White.png" alt="Instagram"></a>
-          </div>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="block">
+            <div>
+                <img src="./assests/logo.png" alt="Logo" />
+            </div>
+            <div>
+                <a href="#"><img src="./assests/facebook.png" alt="Image" /></a>
+                <a href="#"><img src="./assests/twitter.png" alt="Image" /></a>
+                <a href="#"><img src="./assests/instagram.png" alt="Image" /></a>
+            </div>
         </div>
-        <p>©smileschool 2020</p>
-      </div>
+        <p>©smileschool 2018</p>
     </footer>
+</body>
+</html>

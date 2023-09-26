@@ -1,500 +1,328 @@
-@font-face {
-    font-family: 'Source Sans Pro';
-    src: url(fonts/SourceSansPro-Regular.ttf);
-    font-style: normal;
-    font-weight: normal;
-}
+/* Import Google Fonts for "Open Sans" */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
-@font-face {
-    font-family: 'Source Sans Pro';
-    src: url(fonts/SourceSansPro-It.ttf);
-    font-style: italic;
-    font-weight: 200;
-}
-
-@font-face {
-    font-family: 'Source Sans Pro';
-    src: url(fonts/SourceSansPro-Bold.ttf);
-    font-style: normal;
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: 'Source Sans Pro';
-    src: url(fonts/SourceSansPro-ExtraLight.ttf);
-    font-style: lighter;
-    font-weight: normal;
-}
-
-
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color: #ffffff;
-    margin: 0;
+/* Reset default styles and set font family to Open Sans */
+* {
     padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Body styles */
+body {
+    background-image: url("./assests/background.png");
+    background-repeat: no-repeat;
+    max-height: 100vh;
+    background-position: start;
     background-size: cover;
-    background-image: url("images/backgroundsmile.png");
-    background-attachment: fixed;
-} /*Fixed for background image*/
+}
 
-.header {
+/* Header styles */
+header {
+    text-transform: uppercase;
+}
+
+header div {
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 35px 170px;
-    box-sizing: border-box;
+    padding: 20px 50px;
 }
 
-.menu-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 234px;
+header div div a {
+    color: white;
+    margin: 0 30px;
 }
 
-.logo {
-    /* Logo */
-    width: 100px;
-    height: 100px;
-}
-
-.menu-top-right {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: -6px;
-}
-
-.menu-top-right a {
-    text-decoration: none;
-}
-
-.courses,
-.pricing,
-.login {
-    /* Courses, Pricing, Login */
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
-    color: #FFFFFF;
-    text-decoration: none;
-    margin-left: 20px; /* add margin-left to create space between menu items */
-    width: 100px;
-    height: 100px;
-}
-
-.main-part {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.getschooled {
-    /* Get schooled */
-    color: #FFFFFF;
-    margin-top: 1%; /* use margin instead of top to push down */
+/* First section styles */
+section:nth-child(1) div:nth-child(1) {
+    margin: 60px 0;
     text-align: center;
-    font-style: normal;
-    font-weight: 700;
+}
+
+section:nth-child(1) div:nth-child(1) h1 {
     font-size: 120px;
-    line-height: 151px;
+    color: white;
 }
 
-.emotion {
+.sub-title {
+    text-transform: uppercase;
+    color: white;
+    word-spacing: 60px;
+}
+
+button {
+    background-color: #c271ff;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px;
+    border: 0;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+section:nth-child(1) div:nth-child(2) {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+section:nth-child(1) div:nth-child(2) h2 {
+    padding-top: 70px;
+    font-size: 32px;
+    color: white;
+}
+
+section:nth-child(1) div:nth-child(2) h2 span {
+    color: #c271ff;
+}
+
+section:nth-child(1) div:nth-child(2) div {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    /*margin-top: -9%; /* adjust margin to position this block */
+    justify-content: space-around;
+    margin: 50px 0;
 }
 
-.smile,
-.grin,
-.laugh {
-    /* smile, grin, laugh */
-    font-style: normal;
-    font-weight: 700;
+section:nth-child(1) div:nth-child(2) div div {
+    margin: 20px;
+}
+
+section:nth-child(1) div:nth-child(2) div div,
+img,
+h3,
+p {
+    display: block;
+}
+
+section:nth-child(1) div:nth-child(2) div div h3 {
+    font: bold;
+    color: white;
+    margin: 0.45rem 0;
+}
+
+section:nth-child(1) div:nth-child(2) div div p {
+    color: rgb(215, 215, 215);
+    font-style: italic;
+}
+
+/* Second section styles */
+section:nth-child(2) {
+    background-color: #c271ff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 80px 0;
+}
+
+section:nth-child(2) div:nth-child(1) {
+    color: white;
+}
+
+section:nth-child(2) blockquote {
+    margin-top: 10px;
+}
+
+.author {
+    font-weight: bold;
+    font-size: large;
+    margin: 20px 0 10px 0;
+}
+
+section:nth-child(2) img {
+    width: 160px;
+    float: left;
+    margin-right: 30px;
+}
+
+/* Third section styles */
+section:nth-child(3) {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+section:nth-child(3) h1 {
+    font-size: 32px;
+    font-weight: 300;
+    margin: 60px 0;
+}
+
+section:nth-child(3) h1 span {
+    font-weight: bold;
+    color: #c271ff;
+}
+
+.vd-block {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+.vd {
+    max-width: 255px;
+}
+
+.vd h2 {
     font-size: 16px;
-    line-height: 20px;
-    color: #FFFFFF;
-    margin: 10px;
-    margin-left: 50px;
+    margin: 15px 0;
 }
 
-.button-frame {
+.vd p {
+    color: #07162980;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.vd-author {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-top: -6%; /* adjust margin to position this block */
 }
 
-.register-button {
-    /* Register now */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 8%;
-    margin-bottom: 8%; /* Add margin-bottom to create space between button and text */
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 0.88rem;
-    font-family: 'source sans pro', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    border-radius: 1.38rem;
-    border-color: transparent;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 10.13rem;
-    height: 2.75rem;
-    background: #C271FF;
-    color: #FFFFFF;
+.vd-author img {
+    width: 30px;
 }
 
-.learn-from-pros {
-    /* Learn from the pros */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5%; /* adjust margin to position this block */
-    margin-bottom: 4%; /* adjust margin to position this block */
-}
-
-.learn {
-    /* Learn from the pros */
-    font-family: 'Source Sans Pro', sans-serif;
-    margin-top: 20px; /* adjust margin to position this block */
-    margin-bottom: 4%; /* adjust margin to position this block */
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 40px;
+.vd-author h3 {
+    font-size: 14px;
     margin-left: 10px;
-    color: #C271FF;
+    color: #c271ff;
 }
 
-.from-pros {
-    /* Learn from the pros */
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 32px;
-    line-height: 40px;
-    color: #FFFFFF;
-    margin-left: 10px;
-}
-
-.pros-container {
+.vd-rat {
     display: flex;
+    margin: 15px 0;
     justify-content: space-between;
-    align-items: center;
+}
+
+.vd-rat div img {
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+}
+
+.vd-rat div {
+    display: flex;
+}
+
+.vd-rat p {
+    color: #c271ff;
+}
+
+/* Membership section styles */
+section:nth-child(4) {
     text-align: center;
-    margin-top: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.pro {
-    /* specify pro styling here */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 20%;
-    height: 100%;
-}
-
-.avatar {
-    /* specify avatar styling here */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.pro-name {
-    /* specify pro name styling here */
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: bold;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 27px;
-    color: #FFFFFF;
-}
-
-.pro-title {
-    /* « Smile of the year » 2018 - 2019 */
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: italic;
-    font-weight: 200;
-    font-size: 12px;
-    line-height: 24px;
-    color: #FFFFFF;
-    text-align: center;
-}
-
-.quote-section {
-    background-color: #C271FF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.quote-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 80%;
-    padding: 40px;
-    box-sizing: border-box;
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-
-blockquote {
-    /* specify blockquote styling here */
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 34px;
-    color: #FFFFFF;
-    margin-right: 40px;
-}
-
-.quote-info {
-    /* specify quote info styling here */
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-}
-
-.quote-info img {
-    /* specify quote info img styling here */
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-.quote-details
-.name-person {
-    /* specify name styling here */
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 34px;
-    color: #FFFFFF;
-    margin-left: 40px;
-}
-
-.quote-details
-.title {
-    /* specify title styling here */
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 34px;
-    color: #FFFFFF;
-    margin-left: 40px;
-}
-
-.after-quote-section {
-    /* specify after quote section styling here */
-    background-color: #FFFFFF;
-    padding: 40px;
-}
-
-.popular {
-    /* Popular */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5%;
-    margin-bottom: 4%;
-}
-
-.most {
-    /* Most popular */
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 32px;
-    line-height: 40px;
-    color: #071629;
-    text-align: center;
-}
-
-.pop {
-    /* Popular */
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 40px;
-    color: #C271FF;
-    text-align: center;
-}
-
-.tutorials {
-    /* Tutorials */
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 32px;
-    margin-top: 5%;
-    margin-bottom: 4%;
-    color: #071629;
-    text-align: center;
-}
-
-.video-blocks {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-
-}
-
-.video-block {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-.after-popular-section {
-    /* specify after popular section styling here */
     background-color: #071629;
-    padding: 40px;
+    color: white;
 }
 
-.free-membership {
+section:nth-child(4) h1 {
+    padding: 50px 0;
+    font-weight: 300;
+}
+
+section:nth-child(4) h1 span {
+    font-weight: bold;
+    color: #c271ff;
+}
+
+section:nth-child(4) div {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1%;
-    margin-bottom: 5%;
+    justify-content: space-around;
 }
 
-.free {
-    /* Free */
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 40px;
-    color: #C271FF;
+section:nth-child(4) div div,
+img,
+h2,
+p {
+    display: block;
+}
+
+section:nth-child(4) div div {
+    max-width: 257px;
+}
+
+section:nth-child(4) div div img {
+    text-align: center;
+    margin-left: 40%;
+}
+
+section:nth-child(4) div div h2 {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+section:nth-child(4) div div p {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(221, 221, 221);
+}
+
+section:nth-child(4) button {
+    margin: 60px 0 50px 0;
+}
+
+/* FAQ section styles */
+section:nth-child(5) {
+    margin: 0 0 60px 0;
     text-align: center;
 }
 
-.membership {
-    /* Membership */
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 32px;
-    line-height: 40px;
-    color: #FFFFFF;
-    text-align: center;
-}
-
-.membership-blocks {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-.membership-block {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-.button-frame2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2%; /* adjust margin to position this block */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2%;
-}
-
-.faq {
-    /* FAQ */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: normal;
-    font-weight: 300;
+section:nth-child(5) .title {
     font-size: 60px;
-    line-height: 75px;
-    color: #071629;
-    text-align: center;
+    font-weight: 300;
+    margin: 60px 0;
 }
 
-.faq-blocks {
-    display: grid;
-    grid-template-columns: (1fr, 1fr); /* Two columns */
-    grid-gap: 20%; /* Gap between grid items */
-justify-items: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
-.faq-row {
+section:nth-child(5) .block .row {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    justify-content: space-around;
 }
 
-.faq-row img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Do not scale the image */
+section:nth-child(5) .block .row div {
+    text-align: left;
+    max-width: 350px;
+    margin-bottom: 60px;
 }
 
-
-.footer-content {
-    width: 100%;
-    height: 100%;
-    padding: 20px; /* Add padding to create space around the content */
-    box-sizing: border-box; /* Include padding in the element's total width and height */
+section:nth-child(5) .block .row div h2 {
+    margin: 20px 0 30px 0;
+    font-size: 16px;
+    font-weight: 700;
 }
 
-.footer-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Adjust to position items at the far left and far right */
-    margin-bottom: 10px;
-}
-
-.social-links {
-    display: flex;
-    align-items: center;
-}
-
-.footer {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: normal;
+section:nth-child(5) .block .row div p {
+    font-size: 14px;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-    columns: #FFFFFF;
+    color: #071629;
+    line-height: 1.5;
+}
+
+/* Footer styles */
+footer {
+    background-color: #071629;
+    color: white;
+}
+
+footer .block {
+    display: flex;
+    justify-content: space-around;
+    padding: 90px 0;
     text-align: center;
-    mix-blend-mode: normal;
-    opacity: 0.35;
-    border: 1px solid #000000;
+}
+
+footer .block div:nth-child(2) {
+    display: flex;
+}
+
+footer .block div:nth-child(2) a {
+    margin: 0 10px;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    padding-bottom: 40px;
 }
